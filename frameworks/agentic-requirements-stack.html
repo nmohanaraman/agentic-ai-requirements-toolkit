@@ -1,0 +1,75 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agentic Requirements Stack — Agentic AI Requirements Toolkit</title>
+<meta name="author" content="Mohanaraman Namasivayam">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../style.css"></head><body>
+<header class="mast"><div class="wrap">
+<a href="../index.html">Agentic AI Requirements Toolkit</a>
+<span class="role">MOHANARAMAN NAMASIVAYAM &middot; BUSINESS ANALYST / AI REQUIREMENTS &amp; GOVERNANCE PRACTITIONER</span>
+</div></header>
+
+<div class="wrap crumbs"><a href="../index.html">Toolkit</a> / F-01</div>
+<div class="fw-head"><div class="wrap">
+<p class="eyebrow">F-01 &middot; Agentic AI Requirements Toolkit</p>
+<h1>Agentic Requirements Stack</h1>
+<p class="tag">Six layers that define what a complete specification means for a system that chooses its own steps.</p>
+</div></div>
+
+<div class="sec"><div class="wrap"><h2>01 &middot; What problem it solves</h2><p>Traditional functional requirements answer one question &mdash; <em>what should the system do?</em> An agent that plans, selects tools, and adapts at run time cannot be specified by enumerating steps, because the agent constructs its own steps. Teams that specify agents as feature lists routinely ship with most of the actual control surface undefined: nothing states what the agent may write to, which APIs it may call and at what rate, what happens when its confidence is low, what it may remember across sessions, or what evidence would satisfy an auditor after the fact.</p>
+<p>The Stack reorganizes completeness. An agentic specification must answer six questions, arranged as layers, each building on the one beneath it. Scored against a draft specification, it produces a gap table &mdash; typically revealing that a feature-oriented spec addresses only the first layer, and partially.</p></div></div>
+<div class="sec"><div class="wrap"><h2>02 &middot; How it works</h2><p>Score each layer 0&ndash;2: <strong>0</strong> not addressed, <strong>1</strong> partially specified or ambiguous, <strong>2</strong> reviewable, testable, owned, and evidenced. Every layer below 2 gets an owner and a closure action. High-impact use cases should set a release threshold of no layer below 2.</p>
+<table><thead><tr><th>Layer</th><th>Key question</th></tr></thead><tbody>
+<tr><td>1 &mdash; Goal</td><td>What outcome is the agent accountable for, under what constraints, measured how?</td></tr>
+<tr><td>2 &mdash; Autonomy boundaries</td><td>What may it do, what must it ask about, and what is prohibited?</td></tr>
+<tr><td>3 &mdash; Tool contracts</td><td>For each capability, what actions, preconditions, side effects, and limits apply?</td></tr>
+<tr><td>4 &mdash; Escalation &amp; handoff</td><td>When does control return to a human, to whom, with what payload and timeout?</td></tr>
+<tr><td>5 &mdash; Memory &amp; data rights</td><td>What may it retain, learn from, combine, or disclose across sessions and contexts?</td></tr>
+<tr><td>6 &mdash; Audit &amp; traceability</td><td>What evidence must exist to reconstruct and defend every consequential action?</td></tr>
+</tbody></table>
+<p>The full template additionally carries a Memory &amp; Data Rights register (layer 5) and a Verification &amp; Release Readiness checklist (layer 6), so a completed Stack assessment ends in a signed release decision with residual risks visible.</p></div></div>
+<div class="sec"><div class="wrap"><h2>03 &middot; Worked example</h2><p>A national retailer pilots an agent that processes online return requests: it verifies eligibility, issues refunds within policy, and escalates disputes. Scoring the pilot's three-page draft spec against the Stack:</p>
+<table><thead><tr><th>Layer</th><th>Score</th><th>Gap found</th><th>Action</th></tr></thead><tbody>
+<tr><td>1 Goal</td><td>1</td><td>&ldquo;Reduce returns handling effort&rdquo; &mdash; no quality, latency, or cost measure</td><td>Add measurable outcome set; owner: product</td></tr>
+<tr><td>2 Boundaries</td><td>0</td><td>No refund-value threshold; unclear if agent may override restocking fees</td><td>Run Autonomy Boundary Canvas workshop</td></tr>
+<tr><td>3 Tool contracts</td><td>0</td><td>Refund API and inventory writeback undocumented</td><td>Draft contracts for all 6 candidate tools</td></tr>
+<tr><td>4 Escalation</td><td>1</td><td>&ldquo;Escalates disputes&rdquo; &mdash; no recipient, payload, or timeout defined</td><td>Complete Escalation &amp; Handoff Matrix</td></tr>
+<tr><td>5 Memory / data</td><td>0</td><td>Unstated whether agent may reuse one customer's return pattern on another</td><td>Define retention and combination rules</td></tr>
+<tr><td>6 Audit</td><td>0</td><td>No evidence record for &ldquo;why was this refund issued&rdquo;</td><td>Start Traceability Ledger</td></tr>
+</tbody></table>
+<p>Total 2 of 12. The pilot proceeds only after layers 2, 3, and 4 reach score 2 for the release population.</p>
+<p class="disc">The views expressed here are the author's own, and all examples are illustrative composites rather than descriptions of any specific employer, client, or engagement.</p></div></div>
+
+<div class="sec"><div class="wrap"><h2>04 &middot; Template</h2>
+<p>The fill-in template for this framework is a section of the Agentic AI Requirements Toolkit working document
+(.docx). Replace bracketed prompts, add rows as needed, and retain completed versions as decision evidence.</p>
+<a class="dl" href="../templates/Modern_Analyst_Agentic_AI_Requirements_Toolkit_Template.docx">Download template (.docx)</a>
+<p class="note">Per-framework Zenodo deposits with individual DOIs and .xlsx / .md formats are in preparation;
+this page will link them when live. Licence: CC BY 4.0.</p></div></div>
+
+<div class="sec"><div class="wrap"><h2>05 &middot; Version</h2>
+<table><thead><tr><th>Version</th><th>Date</th><th>Change</th></tr></thead>
+<tbody><tr><td class="mono">1.0</td><td>2026</td><td>Initial published version, as set out in the source article and practitioner template</td></tr></tbody></table>
+</div></div>
+
+<div class="sec"><div class="wrap"><h2>06 &middot; Publication reference</h2>
+<p>First published in: Namasivayam, M. &ldquo;The Business Analyst's Guide to Agentic AI Requirements,&rdquo; <em>ModernAnalyst</em>, August 23, 2026.<br>
+<a href="https://www.modernanalyst.com/Resources/Articles/tabid/115/ID/7213/The-Business-Analysts-Guide-to-Agentic-AI-Requirements.aspx">Read the source article</a></p></div></div>
+
+<div class="sec"><div class="wrap"><h2>07 &middot; How to cite</h2>
+<div class="citebox"><button type="button" data-copy>Copy</button>
+<span class="ct">Namasivayam, M. (2026). <em>Agentic Requirements Stack</em> (Version 1.0) [Framework and template]. Agentic AI Requirements Toolkit. Retrieved from https://nmohanaraman.github.io/agentic-ai-requirements-toolkit/frameworks/agentic-requirements-stack.html (Zenodo DOI pending)</span></div>
+</div></div>
+
+<footer><div class="wrap">
+<p><strong>Mohanaraman Namasivayam</strong> &middot; Vice President and Senior Business Analyst &middot; IEEE Senior Member &middot; Member, International Institute of Business Analysis &middot; Programme Committee, IEEE International Conference on Big Data 2026</p>
+<p class="mono" style="margin-top:8px">ORCID 0009-0002-5676-5590 &middot; nmohanaraman@gmail.com &middot; linkedin.com/in/mohannamasivayam</p>
+<p style="margin-top:12px">All frameworks and templates are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> &mdash; reuse and adapt freely with attribution.</p>
+<p class="disc" style="margin-top:10px">The views expressed here are the author's own, and all examples are illustrative composites rather than descriptions of any specific employer, client, or engagement.</p>
+</div></footer>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function(b){
+ b.addEventListener('click',function(){
+  navigator.clipboard.writeText(b.closest('.citebox').querySelector('.ct').innerText).then(function(){
+   b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1600);});
+ });});
+</script></body></html>
