@@ -1,6 +1,6 @@
 # Agentic AI Requirements Toolkit
 
-**Live site: [nmohanaraman.github.io/agentic-ai-requirements-toolkit](https://nmohanaraman.github.io/agentic-ai-requirements-toolkit/)**
+**Live site: [nmohanaraman.github.io/agentic-ai-requirements-toolkit](https://nmohanaraman.github.io/agentic-ai-requirements-toolkit/)** · **DOI: [10.5281/zenodo.22082816](https://doi.org/10.5281/zenodo.22082816)**
 
 Nine original, field-built frameworks for specifying, bounding, and evidencing AI systems that act on their own — and for deciding what AI takes, what the analyst keeps, and where to grow. Each framework ships with an explanation, a worked example, and a fill-in template.
 
@@ -46,7 +46,7 @@ Static site, no build step. Hosted on GitHub Pages from the `main` branch.
 
 ## License and citation
 
-All frameworks and templates are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — reuse and adapt freely with attribution. Each framework page carries a pre-written citation; per-framework Zenodo deposits with individual DOIs are in preparation.
+All frameworks and templates are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — reuse and adapt freely with attribution. The toolkit is archived on Zenodo — cite it as: Namasivayam, M. (2026). *Agentic AI Requirements Toolkit* (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.22082816. Each framework page also carries a pre-written citation; per-framework deposits with individual DOIs are planned.
 
 If you use a framework on a real initiative, attribution is the only ask — and hearing how it performed is the welcome extra: [nmohanaraman@gmail.com](mailto:nmohanaraman@gmail.com).
 
