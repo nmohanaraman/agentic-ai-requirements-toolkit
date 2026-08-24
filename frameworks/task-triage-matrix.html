@@ -56,4 +56,15 @@ document.querySelectorAll('[data-copy]').forEach(function(b){
   navigator.clipboard.writeText(b.closest('.citebox').querySelector('.ct').innerText).then(function(){
    b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1600);});
  });});
-</script></body></html>
+</script><script data-goatcounter="https://nmohanaraman.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+window.addEventListener('click',function(e){
+ var a=e.target.closest&&e.target.closest('a');if(!a||!window.goatcounter||!window.goatcounter.count)return;
+ var h=a.getAttribute('href')||'';
+ if(h.indexOf('.docx')>-1){goatcounter.count({path:'download-'+h.split('/').pop(),title:'Template download',event:true});}
+ else if(h.indexOf('doi.org')>-1){goatcounter.count({path:'doi-click',title:'DOI click',event:true});}
+ else if(h.indexOf('modernanalyst.com')>-1){goatcounter.count({path:'article-modernanalyst',title:'Article click: ModernAnalyst',event:true});}
+ else if(h.indexOf('batimes.com')>-1){goatcounter.count({path:'article-batimes',title:'Article click: BA Times',event:true});}
+});
+</script>
+</body></html>
